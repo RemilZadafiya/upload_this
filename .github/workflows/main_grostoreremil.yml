@@ -19,7 +19,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2'
+          php-version: '8.1'
 
       - name: Check if composer.json exists
         id: check_files
@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'grostoreremil'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6A05D3AFF78474F867A16355FD359A5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_873B8CE61B594CAB8D11BF37BF42DF2D }}
           package: .
