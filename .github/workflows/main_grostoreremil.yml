@@ -57,7 +57,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'grostoreremil'
+          app-name: 'msdocs-laravel-mysql-ecommerce'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_873B8CE61B594CAB8D11BF37BF42DF2D }}
           package: .
